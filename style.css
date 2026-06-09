@@ -1,34 +1,40 @@
 *{
     margin: 0;
 }
-
+body{
+    background-color: black;
+}
 .top_left   {
     display: flex;
     justify-content: center;
     align-items:first baseline;
     height: 100%;
     corner-bottom-left-shape: superellipse(-1);
-    border-radius: 20px;
+    border-radius: 20px 0px 0px 20px;
     border-left: 1px solid rgb(26, 255, 0);
+    background-color: white;
 }
 .bottom_right{
     height: 100%;
     corner-top-right-shape: superellipse(-1);
-    border-radius: 20px;
+    border-radius: 0px 20px 20px 0px;
     border-right: 1px solid rgb(26, 255, 0);
+    background-color: white;
 
 }
 .bottom_left{
         height: 100%;
     corner-top-left-shape: superellipse(-1);
-    border-radius: 20px;
+    border-radius: 20px 0px 0px 20px;
     border-left: 1px solid rgb(26, 255, 0);
+    background-color: white;
 }
 .top_right{
     height: 100%;
     corner-bottom-right-shape: superellipse(-1);
-    border-radius: 20px;
+    border-radius: 0px 20px 20px 0px;
     border-right: 1px solid rgb(26, 255, 0);
+    background-color: white;
 }
 .card {
     display: grid;
@@ -44,5 +50,6 @@
 .card img{
     height: 150%;
     margin-top: 10%;
+    overflow:visible;
 
 }
